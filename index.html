@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Dev Test</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="app">
+            <div class="app__header">
+                <div class="label">
+                    Number of current shapes: 
+                    <span id="current-shapes-qty"></span>
+                </div>
+                <div class="label">
+                    Surface area occupied by shapes: 
+                    <span id="surface-occupied"></span>
+                </div>
+            </div>
+            <div class="app__body" id="app-canvas">
+
+            </div>
+            <div class="app__footer controls">
+                <div class="controls__container">
+                    <button class="btn btn--dec" id="js-change-spawn-rate" data-change="-1">-</button>
+                    <button class="btn btn--inc" id="js-change-spawn-rate" data-change="1">+</button>
+                    <span class="display-text">Number of shapes per second: <span id="shapes-per-sec"></span></span>
+                </div>
+                <div class="controls__container">
+                    <button class="btn btn--dec" id="js-change-gravity" data-change="-0.25">-</button>
+                    <button class="btn btn--inc" id="js-change-gravity" data-change="0.25">+</button>
+                    <span class="display-text">Gravity value: <span id="gravity"></span></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="index.ts"></script>
+</body>
+</html>

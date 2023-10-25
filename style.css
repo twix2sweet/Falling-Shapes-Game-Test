@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #e3d4ac;
+    box-shadow: inset 0 0 80px -15px #00000063;
+}
+
+.app {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+.app__header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.app__body {
+    margin-bottom: 16px;
+    box-shadow: 0px 12px 40px -5px rgba(0,0,0,0.7);
+}
+
+.app__body,
+.label,
+.btn {
+    border: 2px solid black;
+}
+
+.label {
+    padding: 8px 16px;
+    background-color: lightgray;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn {
+    flex: 0 1 content;
+    padding: 12px;
+    min-width: 60px;
+    font-size: 50px;
+    line-height: 0.8;
+    background-color: lightgray;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 6px;
+} 
+
+.btn:hover {
+    background-color: blue;
+    color: lightgray;
+    border: 2px solid white;
+}
+
+.btn:active {
+    transform: scale(1.1) translateY(-4px);
+    transition: 0s;
+}
+
+.btn--dec {
+    margin-left: auto;
+}
+
+.btn--inc {
+    margin-right: auto;
+}
+
+.app__footer {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 32px;
+}
+
+.controls__container {
+    flex: 1 1 calc(50% - 16px);
+    gap: 4px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.controls__container .display-text {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
